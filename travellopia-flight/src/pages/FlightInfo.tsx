@@ -39,11 +39,12 @@ const FlightInfoPage = () => {
           <p className="text-base md:text-lg text-gray-800">
             <span className="font-bold">Destination:</span> {flight.destination}
           </p>
-          <p className="text-base md:text-lg text-gray-800">
-            <span className="font-bold">Arrival Time:</span> {flight.departureTime && getRandomFormattedTime(formatDepartureTime(flight.departureTime))}
-          </p>
+         
           <p className="text-base md:text-lg text-gray-800">
             <span className="font-bold">Departure Time:</span> {formatDepartureTime(flight.departureTime)}
+          </p>
+          <p className="text-base md:text-lg text-gray-800">
+            <span className="font-bold">Arrival Time:</span> {flight.departureTime && getRandomFormattedTime(formatDepartureTime(flight.departureTime))}
           </p>
         </div>
 
