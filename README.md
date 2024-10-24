@@ -6,7 +6,7 @@ The **Flight Tracking Application** is a web-based platform built with **React**
 
 ## Presentation
 
-Watch the demo of the application here: [Flight Tracking Application Demo]([https://youtu.be/](https://youtu.be/vSmf5MtJNqc)).
+Watch the demo of the application here: https://youtu.be/vSmf5MtJNqc
 
 ## Installation and Usage
 
