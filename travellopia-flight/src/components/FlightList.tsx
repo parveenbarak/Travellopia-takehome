@@ -22,7 +22,6 @@ export const FlightList = () => {
     return statusColors[status] || statusColors["default"];
   }
 
-  // Pagination logic
   const indexOfLastFlight = currentPage * flightsPerPage;
   const indexOfFirstFlight = indexOfLastFlight - flightsPerPage;
   const currentFlights = flights.slice(indexOfFirstFlight, indexOfLastFlight);
@@ -68,7 +67,6 @@ export const FlightList = () => {
         </tbody>
       </table>
 
-      {/* Pagination controls */}
       <div className="flex justify-between items-center mt-4">
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
