@@ -20,7 +20,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center p-4 bg-blue-600 text-white">
+    <header className="flex justify-between items-center p-4 bg-blue-600 text-white sticky top-0">
       <h1 className="text-lg font-bold hidden md:block">Travelopia</h1>
       <div className="flex items-center justify-center bg-slate-200 rounded-md">
       <FaSearch className="ml-2 text-blue-600 " />

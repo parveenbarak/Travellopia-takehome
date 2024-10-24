@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { formatDepartureTime } from "../utils/timeFormatter";
+import { formatDepartureTime, getRandomFormattedTime } from "../utils/timeFormatter"; 
 import { FlightInfo } from "../redux/reducer";
 
 const FlightInfoPage = () => {
@@ -33,7 +33,13 @@ const FlightInfoPage = () => {
           <p className="text-xl text-gray-800"><span className="font-bold">Flight Number:</span> {flight.flightNumber}</p>
           <p className="text-xl text-gray-800"><span className="font-bold">Origin:</span> {flight.origin}</p>
           <p className="text-xl text-gray-800"><span className="font-bold">Destination:</span> {flight.destination}</p>
-          <p className="text-xl text-gray-800"><span className="font-bold">Departure Time:</span> {formatDepartureTime(flight.departureTime)}</p>
+          <p className="text-xl text-gray-800">
+            <span className="font-bold">Arrival Time:</span> {flight.departureTime && getRandomFormattedTime(formatDepartureTime(flight.departureTime))}
+          </p>
+          <p className="text-xl text-gray-800">
+            <span className="font-bold">Departure Time:</span> {formatDepartureTime(flight.departureTime)}
+          </p>
+         
         </div>
 
         <button
