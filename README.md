@@ -132,7 +132,7 @@ The application uses **Redux** for managing global state, making it easier to ha
 ### Actions
 
 - `SET_FLIGHT_DATA_Info`: Updates the global flight data.
-- `SET_RECENT_FLIGHT_DATA_info`: Updates recent flight data.
+- `SET_RECENT_FLIGHT_DATA_Info`: Updates recent flight data.
 
 ### Action Creators
 
